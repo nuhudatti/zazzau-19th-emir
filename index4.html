@@ -1,0 +1,1724 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>His Highness Alhaji Ahmad Nuhu Bamalli, CFR | 19th Emir of Zazzau</title>
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="The definitive digital monument to His Highness Alhaji Ahmad Nuhu Bamalli, CFR - 19th Emir of Zazzau, showcasing his legacy, heritage, and cultural preservation efforts">
+    <meta name="keywords" content="Emir of Zazzau, Ahmad Nuhu Bamalli, Zaria, Kaduna, Nigerian Royalty, Mallawa Dynasty, Cultural Heritage">
+    <meta name="author" content="OpenMandate Heritage Initiative">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="His Highness Alhaji Ahmad Nuhu Bamalli, CFR | 19th Emir of Zazzau">
+    <meta property="og:description" content="A digital monument preserving the legacy and heritage of the 19th Emir of Zazzau">
+    <meta property="og:type" content="website">
+    
+    <!-- Fonts & Icons -->
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Montserrat:wght@200;300;400;500;600&family=Amiri:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Libraries -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    
+    <style>
+        :root {
+            --royal-gold: #D4AF37;
+            --heritage-purple: #4A235A;
+            --emirate-green: #0A5F38;
+            --desert-sand: #E6D2AA;
+            --marble-white: #F9F6F0;
+            --deep-plum: #2C0A3A;
+            --transition: all 0.8s cubic-bezier(0.165, 0.84, 0.44, 1);
+            --glass-bg: rgba(255, 255, 255, 0.1);
+            --glass-border: rgba(255, 255, 255, 0.2);
+            --shadow-glow: 0 0 30px rgba(212, 175, 55, 0.3);
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        html {
+            scroll-behavior: smooth;
+        }
+        
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-color: var(--marble-white);
+            color: #333;
+            overflow-x: hidden;
+            line-height: 1.8;
+        }
+        
+        h1, h2, h3, h4, h5 {
+            font-family: 'Cormorant Garamond', serif;
+            font-weight: 700;
+            letter-spacing: 0.5px;
+        }
+        
+        .arabic {
+            font-family: 'Amiri', serif;
+        }
+        
+        /* Royal Navigation */
+        .royal-nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            background: rgba(74, 35, 90, 0.95);
+            backdrop-filter: blur(20px);
+            z-index: 1000;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1.2rem 2rem;
+            border-bottom: 1px solid var(--glass-border);
+            transform: translateY(-100%);
+        }
+        
+        .nav-logo {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.8rem;
+            color: var(--royal-gold);
+            font-weight: 800;
+        }
+        
+        .nav-links {
+            display: flex;
+            gap: 2.5rem;
+        }
+        
+        .nav-link {
+            color: var(--marble-white);
+            text-decoration: none;
+            font-weight: 500;
+            transition: var(--transition);
+            position: relative;
+            font-size: 1.1rem;
+        }
+        
+        .nav-link:hover {
+            color: var(--royal-gold);
+        }
+        
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: var(--royal-gold);
+            transition: var(--transition);
+        }
+        
+        .nav-link:hover::after {
+            width: 100%;
+        }
+        
+        /* Mobile Navigation */
+        .mobile-nav {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: rgba(74, 35, 90, 0.95);
+            backdrop-filter: blur(20px);
+            z-index: 1000;
+            display: none;
+            justify-content: space-around;
+            padding: 0.8rem 0;
+            box-shadow: 0 -2px 10px rgba(0,0,0,0.1);
+            border-top: 1px solid var(--glass-border);
+        }
+        
+        .mobile-nav-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            color: var(--marble-white);
+            text-decoration: none;
+            font-size: 0.7rem;
+            transition: var(--transition);
+            padding: 0.5rem;
+            border-radius: 10px;
+        }
+        
+        .mobile-nav-item i {
+            font-size: 1.2rem;
+            margin-bottom: 0.3rem;
+            transition: var(--transition);
+        }
+        
+        .mobile-nav-item.active {
+            color: var(--royal-gold);
+            background: rgba(212, 175, 55, 0.1);
+        }
+        
+        /* Royal Hero Section */
+        .royal-hero {
+            height: 100vh;
+            width: 100%;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            color: white;
+            text-align: center;
+            background: 
+                linear-gradient(rgba(74, 35, 90, 0.85), rgba(44, 10, 58, 0.9)), 
+                url('https://images.unsplash.com/photo-1589553416267-f19e81c17a8c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+        
+        .royal-hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: 
+                radial-gradient(circle at 20% 80%, rgba(212, 175, 55, 0.2) 0%, transparent 50%),
+                radial-gradient(circle at 80% 20%, rgba(10, 95, 56, 0.2) 0%, transparent 50%);
+            opacity: 0.6;
+        }
+        
+        .royal-floating {
+            position: absolute;
+            color: var(--royal-gold);
+            font-size: 2rem;
+            z-index: 5;
+            opacity: 0.7;
+        }
+        
+        .hero-content {
+            position: relative;
+            z-index: 20;
+            max-width: 1200px;
+            padding: 1rem;
+            width: 100%;
+        }
+        
+        .hero-title {
+            font-size: 3.5rem;
+            font-weight: 700;
+            margin-bottom: 1.5rem;
+            text-shadow: 0 5px 25px rgba(0,0,0,0.7);
+            line-height: 1.1;
+            transform: translateY(50px);
+            opacity: 0;
+        }
+        
+        .hero-subtitle {
+            font-size: 1.8rem;
+            margin-bottom: 2rem;
+            font-weight: 300;
+            color: var(--royal-gold);
+            transform: translateY(50px);
+            opacity: 0;
+            font-family: 'Montserrat', sans-serif;
+            font-style: italic;
+        }
+        
+        .hero-quote {
+            font-size: 1.3rem;
+            font-style: italic;
+            max-width: 900px;
+            margin: 2rem auto;
+            padding: 1.5rem;
+            border-left: 4px solid var(--royal-gold);
+            background: rgba(0,0,0,0.3);
+            position: relative;
+            transform: translateY(50px);
+            opacity: 0;
+            backdrop-filter: blur(10px);
+            border-radius: 10px;
+            box-shadow: var(--shadow-glow);
+        }
+        
+        .hero-dates {
+            font-size: 1.8rem;
+            margin-top: 2rem;
+            color: var(--desert-sand);
+            transform: translateY(50px);
+            opacity: 0;
+            font-family: 'Amiri', serif;
+        }
+        
+        .scroll-indicator {
+            position: absolute;
+            bottom: 5rem;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 2.5rem;
+            color: var(--royal-gold);
+            z-index: 30;
+            animation: bounce 3s infinite;
+            cursor: pointer;
+            background: rgba(0,0,0,0.3);
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            backdrop-filter: blur(10px);
+            border: 1px solid var(--glass-border);
+            transition: var(--transition);
+        }
+        
+        .scroll-indicator:hover {
+            background: rgba(212, 175, 55, 0.2);
+            transform: translateX(-50%) scale(1.1);
+        }
+        
+        /* Section Styling */
+        .section-header {
+            text-align: center;
+            margin-bottom: 3rem;
+            padding-top: 6rem;
+            transform: translateY(30px);
+            opacity: 0;
+        }
+        
+        .section-title {
+            font-size: 3rem;
+            color: var(--heritage-purple);
+            position: relative;
+            display: inline-block;
+            margin-bottom: 1.5rem;
+        }
+        
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: -15px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 150px;
+            height: 4px;
+            background: var(--royal-gold);
+        }
+        
+        .section-subtitle {
+            font-size: 1.5rem;
+            color: var(--emirate-green);
+            max-width: 900px;
+            margin: 0 auto;
+            font-weight: 400;
+            font-family: 'Montserrat', sans-serif;
+            font-style: italic;
+        }
+        
+        /* Royal Divider */
+        .royal-divider {
+            height: 2px;
+            background: linear-gradient(90deg, transparent, var(--royal-gold), transparent);
+            margin: 4rem auto;
+            width: 80%;
+            transform: scaleX(0);
+            transform-origin: center;
+        }
+        
+        /* Biography Section */
+        .royal-bio {
+            padding: 6rem 0;
+            background: linear-gradient(rgba(249, 246, 240, 0.9), rgba(249, 246, 240, 0.9));
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .bio-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 1rem;
+        }
+        
+        .bio-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+        }
+        
+        .bio-timeline {
+            background: rgba(255, 255, 255, 0.7);
+            border-radius: 20px;
+            padding: 2.5rem;
+            border: 1px solid rgba(212, 175, 55, 0.3);
+            backdrop-filter: blur(10px);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+        
+        .timeline-item {
+            margin-bottom: 2rem;
+            padding-bottom: 2rem;
+            border-bottom: 1px solid rgba(212, 175, 55, 0.3);
+            transform: translateX(-20px);
+            opacity: 0;
+        }
+        
+        .timeline-item:last-child {
+            margin-bottom: 0;
+            padding-bottom: 0;
+            border-bottom: none;
+        }
+        
+        .timeline-year {
+            font-weight: 700;
+            font-size: 1.5rem;
+            color: var(--emirate-green);
+            margin-bottom: 0.5rem;
+        }
+        
+        .timeline-title {
+            font-size: 1.3rem;
+            margin-bottom: 0.5rem;
+            color: var(--heritage-purple);
+        }
+        
+        /* Heritage Timeline Section */
+        .heritage-timeline {
+            padding: 6rem 0;
+            background: linear-gradient(rgba(10, 95, 56, 0.05), rgba(10, 95, 56, 0.05));
+            position: relative;
+        }
+        
+        .timeline-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1rem;
+            position: relative;
+        }
+        
+        .timeline {
+            position: relative;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .timeline::after {
+            content: '';
+            position: absolute;
+            width: 6px;
+            background-color: var(--royal-gold);
+            top: 0;
+            bottom: 0;
+            left: 50%;
+            margin-left: -3px;
+        }
+        
+        .timeline-item-container {
+            padding: 10px 40px;
+            position: relative;
+            width: 50%;
+            opacity: 0;
+            transform: translateY(30px);
+        }
+        
+        .timeline-item-container:nth-child(odd) {
+            left: 0;
+        }
+        
+        .timeline-item-container:nth-child(even) {
+            left: 50%;
+        }
+        
+        .timeline-content {
+            padding: 20px 30px;
+            background-color: white;
+            position: relative;
+            border-radius: 6px;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+            border-left: 4px solid var(--emirate-green);
+        }
+        
+        .timeline-content h3 {
+            color: var(--heritage-purple);
+            margin-bottom: 1rem;
+        }
+        
+        /* Cultural Preservation Section */
+        .cultural-preservation {
+            padding: 6rem 0;
+            background: linear-gradient(rgba(74, 35, 90, 0.05), rgba(74, 35, 90, 0.05));
+            color: #333;
+            position: relative;
+        }
+        
+        .cultural-container {
+            max-width: 1500px;
+            margin: 0 auto;
+            padding: 0 1rem;
+        }
+        
+        .cultural-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 3rem;
+            margin-top: 4rem;
+        }
+        
+        .cultural-card {
+            background: white;
+            border-radius: 20px;
+            padding: 2.5rem;
+            box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+            transition: var(--transition);
+            transform: translateY(50px);
+            opacity: 0;
+            border: 1px solid rgba(212, 175, 55, 0.3);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .cultural-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(212, 175, 55, 0.2), transparent);
+            transition: left 0.7s ease;
+        }
+        
+        .cultural-card:hover::before {
+            left: 100%;
+        }
+        
+        .cultural-card:hover {
+            transform: translateY(-15px);
+            box-shadow: 0 25px 50px rgba(0,0,0,0.15);
+        }
+        
+        .cultural-icon {
+            font-size: 3rem;
+            color: var(--royal-gold);
+            margin-bottom: 1.5rem;
+        }
+        
+        .cultural-card h3 {
+            font-size: 1.8rem;
+            color: var(--heritage-purple);
+            margin-bottom: 1.5rem;
+        }
+        
+        .cultural-card p {
+            font-size: 1.1rem;
+            color: #555;
+        }
+        
+        /* Royal Gallery Section */
+        .royal-gallery {
+            padding: 6rem 0;
+            background: linear-gradient(rgba(249, 246, 240, 0.9), rgba(249, 246, 240, 0.9));
+        }
+        
+        .gallery-container {
+            max-width: 1600px;
+            margin: 0 auto;
+            padding: 0 1rem;
+        }
+        
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 2rem;
+        }
+        
+        .gallery-item {
+            height: 400px;
+            border-radius: 10px;
+            overflow: hidden;
+            position: relative;
+            box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+            transform: scale(0.95);
+            opacity: 0;
+        }
+        
+        .gallery-img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: var(--transition);
+        }
+        
+        .gallery-caption {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: linear-gradient(to top, rgba(74, 35, 90, 0.9), transparent);
+            color: white;
+            padding: 2rem;
+            transform: translateY(100%);
+            transition: var(--transition);
+        }
+        
+        .gallery-item:hover .gallery-img {
+            transform: scale(1.05);
+        }
+        
+        .gallery-item:hover .gallery-caption {
+            transform: translateY(0);
+        }
+        
+        /* Emir's Message Section */
+        .emir-message {
+            padding: 6rem 0;
+            background: linear-gradient(rgba(74, 35, 90, 0.9), rgba(44, 10, 58, 0.9)), 
+                        url('https://images.unsplash.com/photo-1560568082-c151ff0f2b7a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            text-align: center;
+        }
+        
+        .message-container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 0 1rem;
+        }
+        
+        .message-card {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(15px);
+            border-radius: 20px;
+            padding: 5rem;
+            border: 1px solid rgba(212, 175, 55, 0.3);
+            transform: translateY(50px) scale(0.95);
+            opacity: 0;
+            box-shadow: var(--shadow-glow);
+        }
+        
+        .message-header {
+            text-align: center;
+            margin-bottom: 3rem;
+            transform: translateY(20px);
+            opacity: 0;
+        }
+        
+        .message-header h2 {
+            font-size: 3.5rem;
+            color: var(--royal-gold);
+            margin-bottom: 1rem;
+        }
+        
+        .message-content {
+            font-size: 1.3rem;
+            line-height: 1.9;
+            margin-bottom: 2rem;
+            font-weight: 300;
+        }
+        
+        .message-content p {
+            margin-bottom: 2rem;
+            transform: translateY(20px);
+            opacity: 0;
+        }
+        
+        .signature {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 2rem;
+            text-align: center;
+            color: var(--royal-gold);
+            margin-top: 3rem;
+            font-style: italic;
+            transform: translateY(20px);
+            opacity: 0;
+        }
+        
+        /* Virtual Museum Section */
+        .virtual-museum {
+            padding: 6rem 0;
+            background: linear-gradient(rgba(249, 246, 240, 0.9), rgba(249, 246, 240, 0.9));
+        }
+        
+        .museum-container {
+            max-width: 1500px;
+            margin: 0 auto;
+            padding: 0 1rem;
+        }
+        
+        .museum-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 2rem;
+            margin-top: 4rem;
+        }
+        
+        .museum-item {
+            background: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+            transform: translateY(50px);
+            opacity: 0;
+            transition: var(--transition);
+        }
+        
+        .museum-item:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 25px 50px rgba(0,0,0,0.15);
+        }
+        
+        .museum-img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+        }
+        
+        .museum-info {
+            padding: 2rem;
+        }
+        
+        .museum-info h3 {
+            color: var(--heritage-purple);
+            margin-bottom: 1rem;
+        }
+        
+        /* Royal Legacy Section */
+        .royal-legacy {
+            padding: 8rem 0;
+            background: linear-gradient(135deg, var(--heritage-purple), var(--deep-plum));
+            color: white;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .legacy-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1rem;
+            position: relative;
+            z-index: 10;
+        }
+        
+        .legacy-title {
+            font-size: 4rem;
+            color: var(--royal-gold);
+            margin-bottom: 3rem;
+            transform: translateY(30px);
+            opacity: 0;
+        }
+        
+        .legacy-statement {
+            font-size: 1.8rem;
+            line-height: 1.8;
+            margin-bottom: 4rem;
+            font-weight: 300;
+            max-width: 1000px;
+            margin-left: auto;
+            margin-right: auto;
+            transform: translateY(30px);
+            opacity: 0;
+        }
+        
+        .quran-verse-large {
+            font-size: 2.5rem;
+            margin: 4rem auto;
+            padding: 3rem;
+            border-top: 4px solid var(--royal-gold);
+            border-bottom: 4px solid var(--royal-gold);
+            line-height: 1.6;
+            transform: scale(0.9);
+            opacity: 0;
+            font-family: 'Amiri', serif;
+        }
+        
+        .verse-translation {
+            font-size: 1.5rem;
+            margin-top: 2rem;
+            font-style: italic;
+            color: var(--desert-sand);
+        }
+        
+        /* Royal Footer */
+        .royal-footer {
+            background: var(--deep-plum);
+            color: white;
+            text-align: center;
+            padding: 6rem 1rem;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .footer-content {
+            max-width: 1000px;
+            margin: 0 auto;
+            position: relative;
+            z-index: 10;
+        }
+        
+        .footer-logo {
+            font-size: 4rem;
+            color: var(--royal-gold);
+            margin-bottom: 2rem;
+            transform: translateY(20px);
+            opacity: 0;
+        }
+        
+        .footer-quote {
+            font-size: 1.8rem;
+            margin-bottom: 3rem;
+            font-style: italic;
+            color: var(--desert-sand);
+            transform: translateY(20px);
+            opacity: 0;
+        }
+        
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+            margin-top: 3rem;
+            margin-bottom: 3rem;
+            flex-wrap: wrap;
+        }
+        
+        .social-icon {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            background: rgba(255,255,255,0.1);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.8rem;
+            transition: var(--transition);
+            color: var(--royal-gold);
+            transform: scale(0);
+        }
+        
+        .social-icon:hover {
+            background: var(--royal-gold);
+            color: var(--deep-plum);
+            transform: translateY(-8px) scale(1.1);
+        }
+        
+        .copyright {
+            margin-top: 3rem;
+            font-size: 1.1rem;
+            opacity: 0.8;
+            transform: translateY(20px);
+            opacity: 0;
+        }
+        
+        /* Animations */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% {
+                transform: translateY(0) translateX(-50%);
+            }
+            40% {
+                transform: translateY(-25px) translateX(-50%);
+            }
+            60% {
+                transform: translateY(-12px) translateX(-50%);
+            }
+        }
+        
+        @keyframes float {
+            0% {
+                transform: translateY(0px);
+            }
+            50% {
+                transform: translateY(-25px);
+            }
+            100% {
+                transform: translateY(0px);
+            }
+        }
+        
+        @keyframes scaleIn {
+            from {
+                transform: scale(0.9);
+                opacity: 0;
+            }
+            to {
+                transform: scale(1);
+                opacity: 1;
+            }
+        }
+        
+        /* Floating elements */
+        .royal-floating {
+            animation: float 10s infinite ease-in-out;
+        }
+        
+        /* Responsive Design */
+        @media (min-width: 768px) {
+            .hero-title {
+                font-size: 5rem;
+            }
+            
+            .hero-subtitle {
+                font-size: 2.2rem;
+            }
+            
+            .hero-quote {
+                font-size: 1.5rem;
+            }
+            
+            .hero-dates {
+                font-size: 2.2rem;
+            }
+            
+            .section-title {
+                font-size: 4rem;
+            }
+            
+            .section-subtitle {
+                font-size: 1.8rem;
+            }
+            
+            .cultural-grid {
+                grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+                gap: 3rem;
+            }
+            
+            .gallery-grid {
+                grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+                gap: 2rem;
+            }
+            
+            .museum-grid {
+                grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+                gap: 2rem;
+            }
+            
+            .legacy-title {
+                font-size: 5rem;
+            }
+            
+            .legacy-statement {
+                font-size: 2.2rem;
+            }
+            
+            .quran-verse-large {
+                font-size: 3rem;
+            }
+            
+            .verse-translation {
+                font-size: 1.8rem;
+            }
+        }
+        
+        @media (min-width: 1024px) {
+            .hero-title {
+                font-size: 6rem;
+            }
+            
+            .royal-floating {
+                font-size: 2.5rem;
+            }
+            
+            .section-title {
+                font-size: 4.5rem;
+            }
+            
+            .cultural-grid {
+                grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+                gap: 4rem;
+            }
+            
+            .gallery-grid {
+                grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+                gap: 2rem;
+            }
+            
+            .museum-grid {
+                grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+                gap: 3rem;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .royal-nav {
+                display: none;
+            }
+            
+            .mobile-nav {
+                display: flex;
+            }
+            
+            .bio-content {
+                grid-template-columns: 1fr;
+                gap: 3rem;
+            }
+            
+            .timeline::after {
+                left: 31px;
+            }
+            
+            .timeline-item-container {
+                width: 100%;
+                padding-left: 70px;
+                padding-right: 25px;
+            }
+            
+            .timeline-item-container:nth-child(even) {
+                left: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Royal Navigation -->
+    <nav class="royal-nav" id="navbar">
+        <div class="nav-logo">Emir of Zazzau</div>
+        <div class="nav-links">
+            <a href="#hero" class="nav-link">Home</a>
+            <a href="#bio" class="nav-link">Biography</a>
+            <a href="#heritage" class="nav-link">Heritage</a>
+            <a href="#cultural" class="nav-link">Cultural Preservation</a>
+            <a href="#gallery" class="nav-link">Gallery</a>
+            <a href="#message" class="nav-link">Message</a>
+            <a href="#museum" class="nav-link">Virtual Museum</a>
+            <a href="#legacy" class="nav-link">Legacy</a>
+        </div>
+    </nav>
+
+    <!-- Mobile Navigation -->
+    <div class="mobile-nav">
+        <a href="#hero" class="mobile-nav-item active">
+            <i class="fas fa-home"></i>
+            <span>Home</span>
+        </a>
+        <a href="#bio" class="mobile-nav-item">
+            <i class="fas fa-user"></i>
+            <span>Biography</span>
+        </a>
+        <a href="#heritage" class="mobile-nav-item">
+            <i class="fas fa-landmark"></i>
+            <span>Heritage</span>
+        </a>
+        <a href="#cultural" class="mobile-nav-item">
+            <i class="fas fa-hands-helping"></i>
+            <span>Culture</span>
+        </a>
+        <a href="#legacy" class="mobile-nav-item">
+            <i class="fas fa-infinity"></i>
+            <span>Legacy</span>
+        </a>
+    </div>
+
+    <!-- Royal Hero Section -->
+    <section class="royal-hero" id="hero">
+        <!-- Royal floating elements -->
+        <div class="royal-floating" style="top:10%; left:10%;"><i class="fas fa-crown"></i></div>
+        <div class="royal-floating" style="top:20%; right:15%;"><i class="fas fa-book"></i></div>
+        <div class="royal-floating" style="bottom:30%; left:20%;"><i class="fas fa-gavel"></i></div>
+        <div class="royal-floating" style="bottom:20%; right:20%;"><i class="fas fa-hands-helping"></i></div>
+        <div class="royal-floating" style="top:15%; right:25%;"><i class="fas fa-road"></i></div>
+        <div class="royal-floating" style="bottom:40%; left:10%;"><i class="fas fa-school"></i></div>
+        
+        <div class="hero-content">
+            <h1 class="hero-title">His Highness<br>Alhaji Ahmad Nuhu Bamalli, CFR</h1>
+            <p class="hero-subtitle">19th Emir of Zazzau • Custodian of Heritage • Leader of Legacy</p>
+            <div class="hero-dates">First Mallawa Emir in 100 Years</div>
+            <p class="hero-quote">"A steward of Mallawa tradition, blending the dignity of palace rites with the practice of modern public service."</p>
+        </div>
+        <div class="scroll-indicator">
+            <i class="fas fa-chevron-down"></i>
+        </div>
+    </section>
+
+    <!-- Biography Section -->
+    <section class="royal-bio" id="bio">
+        <div class="section-header">
+            <h2 class="section-title">Biography of a Visionary Leader</h2>
+            <p class="section-subtitle">From Zaria to National Leadership: A Journey of Service</p>
+        </div>
+        
+        <div class="royal-divider" id="divider1"></div>
+        
+        <div class="bio-container">
+            <div class="bio-content">
+                <div class="bio-text">
+                    <p>His Highness Alhaji Ahmad Nuhu Bamalli, CFR, stands as a distinguished figure in Nigeria's traditional and political landscape. Born on June 8, 1966, in Zaria, Kaduna State, he hails from the historic Mallawa ruling house of the Zazzau Emirate.</p>
+                    <p>Before ascending to the throne as the 19th Emir of Zazzau on October 7, 2020, His Highness had an illustrious career spanning law, banking, public service, and diplomacy. His educational background includes a Law degree (LLB) and a Master's in International Affairs and Diplomacy from Ahmadu Bello University, Zaria.</p>
+                    <p>As Nigeria's Ambassador to Thailand (with concurrent accreditation to Myanmar) from 2017 to 2020, he strengthened bilateral relations and represented Nigeria with distinction on the international stage.</p>
+                    <p>His appointment as Emir marked the return of the Mallawa dynasty to the throne after nearly a century, representing a significant moment in the history of the Zazzau Emirate.</p>
+                </div>
+                
+                <div class="bio-timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-year">1966</div>
+                        <h3 class="timeline-title">Birth in Zaria</h3>
+                        <p>Born into the royal Mallawa dynasty of the Zazzau Emirate.</p>
+                    </div>
+                    
+                    <div class="timeline-item">
+                        <div class="timeline-year">1989</div>
+                        <h3 class="timeline-title">Legal Education</h3>
+                        <p>Graduated with LLB from Ahmadu Bello University, Zaria.</p>
+                    </div>
+                    
+                    <div class="timeline-item">
+                        <div class="timeline-year">2002</div>
+                        <h3 class="timeline-title">Advanced Studies</h3>
+                        <p>Earned Master's in International Affairs & Diplomacy from ABU.</p>
+                    </div>
+                    
+                    <div class="timeline-item">
+                        <div class="timeline-year">2017-2020</div>
+                        <h3 class="timeline-title">Diplomatic Service</h3>
+                        <p>Served as Nigeria's Ambassador to Thailand and Myanmar.</p>
+                    </div>
+                    
+                    <div class="timeline-item">
+                        <div class="timeline-year">2020-Present</div>
+                        <h3 class="timeline-title">Emir of Zazzau</h3>
+                        <p>Appointed 19th Emir of Zazzau on October 7, 2020.</p>
+                    </div>
+                    
+                    <div class="timeline-item">
+                        <div class="timeline-year">2022</div>
+                        <h3 class="timeline-title">National Honor</h3>
+                        <p>Conferred with CFR (Commander of the Order of the Federal Republic).</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="royal-divider" id="divider2"></div>
+    </section>
+
+    <!-- Heritage Timeline Section -->
+    <section class="heritage-timeline" id="heritage">
+        <div class="section-header">
+            <h2 class="section-title">Zazzau Heritage Timeline</h2>
+            <p class="section-subtitle">Six Centuries of Royal Legacy and Cultural Stewardship</p>
+        </div>
+        
+        <div class="timeline-container">
+            <div class="timeline">
+                <div class="timeline-item-container">
+                    <div class="timeline-content">
+                        <h3>Pre-1804: Hausa Kingdom Era</h3>
+                        <p>Zazzau existed as one of the seven original Hausa kingdoms, with a rich history of trade, governance, and cultural development.</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item-container">
+                    <div class="timeline-content">
+                        <h3>1804: Fulani Jihad</h3>
+                        <p>Zazzau was conquered during the Fulani Jihad led by Usman dan Fodio, establishing the Sokoto Caliphate's influence.</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item-container">
+                    <div class="timeline-content">
+                        <h3>19th Century: Mallawa Dynasty</h3>
+                        <p>The Mallawa ruling house emerged as one of the four principal dynasties of Zazzau, with Emir Malam Musa Bamalli establishing the lineage.</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item-container">
+                    <div class="timeline-content">
+                        <h3>Early 20th Century: Colonial Era</h3>
+                        <p>Zazzau Emirate adapted to British colonial administration while maintaining traditional structures and cultural practices.</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item-container">
+                    <div class="timeline-content">
+                        <h3>1920: Last Mallawa Ruler</h3>
+                        <p>Emir Dan Sidi, the last Mallawa ruler before the century-long gap, reigned until approximately 1920.</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item-container">
+                    <div class="timeline-content">
+                        <h3>1975-2020: Shehu Idris Era</h3>
+                        <p>Emir Shehu Idris reigned for 45 years, modernizing the emirate while preserving its cultural heritage.</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item-container">
+                    <div class="timeline-content">
+                        <h3>2020-Present: New Era</h3>
+                        <p>His Highness Alhaji Ahmad Nuhu Bamalli ascends as 19th Emir, restoring Mallawa leadership after a century.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cultural Preservation Section -->
+    <section class="cultural-preservation" id="cultural">
+        <div class="section-header">
+            <h2 class="section-title">Cultural Preservation Initiatives</h2>
+            <p class="section-subtitle">Safeguarding Heritage for Future Generations</p>
+        </div>
+        
+        <div class="cultural-container">
+            <div class="cultural-grid">
+                <div class="cultural-card">
+                    <div class="cultural-icon">
+                        <i class="fas fa-landmark"></i>
+                    </div>
+                    <h3>Palace Restoration</h3>
+                    <p>Comprehensive renovation of the Zazzau Palace, restoring historical symbols and traditional architecture while introducing modern amenities for effective administration.</p>
+                </div>
+                
+                <div class="cultural-card">
+                    <div class="cultural-icon">
+                        <i class="fas fa-book"></i>
+                    </div>
+                    <h3>Aliyu Dan Sidi Museum</h3>
+                    <p>Establishment of a modern documentation center and museum within the 600-year-old Takon Giwa building, preserving historic documents, artifacts, and cultural assets.</p>
+                </div>
+                
+                <div class="cultural-card">
+                    <div class="cultural-icon">
+                        <i class="fas fa-hands-helping"></i>
+                    </div>
+                    <h3>Traditional Mediation</h3>
+                    <p>Revitalization of traditional dispute resolution systems, with the Zazzau Emirate Council resolving over 2,000 community conflicts through culturally-grounded mediation.</p>
+                </div>
+                
+                <div class="cultural-card">
+                    <div class="cultural-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <h3>Youth Heritage Education</h3>
+                    <p>Educational programs integrating traditional knowledge with modern curricula, ensuring younger generations understand and value Zazzau's rich cultural heritage.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Royal Gallery Section -->
+    <section class="royal-gallery" id="gallery">
+        <div class="section-header">
+            <h2 class="section-title">Royal Gallery</h2>
+            <p class="section-subtitle">Moments from a Life of Service and Leadership</p>
+        </div>
+        
+        <div class="gallery-container">
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <div class="gallery-img" style="background: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1)), url('https://images.unsplash.com/photo-1589553416267-f19e81c17a8c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80') center/cover;"></div>
+                    <div class="gallery-caption">
+                        <h3>Coronation Ceremony</h3>
+                        <p>Official installation as the 19th Emir of Zazzau</p>
+                    </div>
+                </div>
+                
+                <div class="gallery-item">
+                    <div class="gallery-img" style="background: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1)), url('https://images.unsplash.com/photo-1560448204-603b3fc33ddc?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80') center/cover;"></div>
+                    <div class="gallery-caption">
+                        <h3>Diplomatic Service</h3>
+                        <p>As Nigeria's Ambassador to Thailand and Myanmar</p>
+                    </div>
+                </div>
+                
+                <div class="gallery-item">
+                    <div class="gallery-img" style="background: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1)), url('https://images.unsplash.com/photo-1589553416267-f19e81c17a8c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80') center/cover;"></div>
+                    <div class="gallery-caption">
+                        <h3>Community Engagement</h3>
+                        <p>Meeting with traditional rulers and community leaders</p>
+                    </div>
+                </div>
+                
+                <div class="gallery-item">
+                    <div class="gallery-img" style="background: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1)), url('https://images.unsplash.com/photo-1560448204-603b3fc33ddc?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80') center/cover;"></div>
+                    <div class="gallery-caption">
+                        <h3>Cultural Festivals</h3>
+                        <p>Presiding over traditional Durbar celebrations</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Emir's Message Section -->
+    <section class="emir-message" id="message">
+        <div class="section-header">
+            <h2 class="section-title">A Message from His Highness</h2>
+            <p class="section-subtitle">Vision for Unity, Progress and Cultural Preservation</p>
+        </div>
+        
+        <div class="message-container">
+            <div class="message-card" id="messageCard">
+                <div class="message-header">
+                    <h2>Our Shared Heritage, Our Collective Future</h2>
+                    <p>Guidance for the People of Zazzau</p>
+                </div>
+                <div class="message-content">
+                    <p>In the continuity of Zazzau's storied history, we carry forward the Mallawa tradition with humility and dedication. Our emirate stands as a beacon of cultural preservation, interfaith harmony, and community development.</p>
+                    
+                    <p>Education remains the cornerstone of our progress. Through investment in schools, scholarships, and vocational training, we empower our youth to become leaders who honor our traditions while embracing innovation.</p>
+                    
+                    <p>The preservation of our cultural heritage is not merely about maintaining the past, but about building a foundation for the future. Our museums, traditional festivals, and oral history projects ensure that the wisdom of our ancestors continues to guide generations to come.</p>
+                    
+                    <p>As we navigate the challenges of modernity, let us remember that our strength lies in unity. Across ethnicities, religions, and communities, we are bound by shared history and common purpose. Together, we will build a Zazzau that honors its past while confidently stepping into the future.</p>
+                    
+                    <p>May Allah continue to bless our emirate, guide our leadership, and unite our people in peace and prosperity.</p>
+                </div>
+                <p class="signature">His Highness Alhaji Ahmad Nuhu Bamalli, CFR<br>19th Emir of Zazzau</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Virtual Museum Section -->
+    <section class="virtual-museum" id="museum">
+        <div class="section-header">
+            <h2 class="section-title">Zazzau Virtual Museum</h2>
+            <p class="section-subtitle">Exploring the Cultural Treasures of the Emirate</p>
+        </div>
+        
+        <div class="museum-container">
+            <div class="museum-grid">
+                <div class="museum-item">
+                    <div class="museum-img" style="background: url('https://images.unsplash.com/photo-1589553416267-f19e81c17a8c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80') center/cover;"></div>
+                    <div class="museum-info">
+                        <h3>Royal Regalia</h3>
+                        <p>Traditional attire, crowns, and symbols of authority used by successive Emirs of Zazzau.</p>
+                    </div>
+                </div>
+                
+                <div class="museum-item">
+                    <div class="museum-img" style="background: url('https://images.unsplash.com/photo-1560448204-603b3fc33ddc?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80') center/cover;"></div>
+                    <div class="museum-info">
+                        <h3>Historical Documents</h3>
+                        <p>Centuries-old manuscripts, treaties, and administrative records from the Zazzau Emirate.</p>
+                    </div>
+                </div>
+                
+                <div class="museum-item">
+                    <div class="museum-img" style="background: url('https://images.unsplash.com/photo-1589553416267-f19e81c17a8c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80') center/cover;"></div>
+                    <div class="museum-info">
+                        <h3>Traditional Crafts</h3>
+                        <p>Exquisite examples of Zazzau's renowned textile weaving, leatherwork, and metalcraft.</p>
+                    </div>
+                </div>
+                
+                <div class="museum-item">
+                    <div class="museum-img" style="background: url('https://images.unsplash.com/photo-1560448204-603b3fc33ddc?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80') center/cover;"></div>
+                    <div class="museum-info">
+                        <h3>Archaeological Finds</h3>
+                        <p>Artifacts revealing the ancient history of the Zazzau region and its people.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Royal Legacy Section -->
+    <section class="royal-legacy" id="legacy">
+        <div class="legacy-content">
+            <h2 class="legacy-title">An Enduring Legacy</h2>
+            <p class="legacy-statement">His Highness Alhaji Ahmad Nuhu Bamalli's impact transcends his reign. His legacy is woven into the very fabric of Zazzau—in the institutions he has strengthened, the cultural heritage he preserves, the unity he fosters, and the future he envisions for generations to come.</p>
+            
+            <div class="quran-verse-large">
+                إِنَّا نَحْنُ نُحْيِي الْمَوْتَىٰ وَنَكْتُبُ مَا قَدَّمُوا وَآثَارَهُمْ
+                <div class="verse-translation">"Indeed, it is We who bring the dead to life and record what they have put forth and their traces." (Quran 36:12)</div>
+            </div>
+            
+            <p class="legacy-statement">As his leadership continues to guide Zazzau toward greater unity and prosperity, His Highness's legacy stands as a monument to service, a testament to vision, and a bridge connecting Zazzau's glorious past with its promising future.</p>
+        </div>
+    </section>
+
+    <!-- Royal Footer -->
+    <footer class="royal-footer">
+        <div class="footer-content">
+            <div class="footer-logo">
+                <i class="fas fa-crown"></i>
+            </div>
+            <h3>His Highness Alhaji Ahmad Nuhu Bamalli, CFR</h3>
+            <p class="footer-quote">"In his stewardship, tradition and progress walk hand in hand"</p>
+            
+            <div class="footer-links">
+                <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
+            </div>
+            
+            <p class="copyright">© 2025 – ∞ | The Royal Heritage Monument of His Highness Alhaji Ahmad Nuhu Bamalli, CFR<br>Zazzau Emirate • Kaduna State • Nigeria<br>Preserving Heritage • Inspiring Future Generations</p>
+        </div>
+    </footer>
+
+    <script>
+        // Initialize GSAP animations
+        document.addEventListener('DOMContentLoaded', function() {
+            // Register ScrollTrigger plugin
+            gsap.registerPlugin(ScrollTrigger);
+            
+            // Navbar animation
+            gsap.to('.royal-nav', {
+                duration: 1,
+                y: 0,
+                ease: 'power3.out',
+                delay: 0.5
+            });
+            
+            // Hero elements animation
+            gsap.to('.hero-title', {
+                duration: 1.8,
+                y: 0,
+                opacity: 1,
+                ease: 'power3.out',
+                delay: 0.3
+            });
+            
+            gsap.to('.hero-subtitle', {
+                duration: 1.8,
+                y: 0,
+                opacity: 1,
+                ease: 'power3.out',
+                delay: 0.6
+            });
+            
+            gsap.to('.hero-dates', {
+                duration: 1.8,
+                y: 0,
+                opacity: 1,
+                ease: 'power3.out',
+                delay: 0.9
+            });
+            
+            gsap.to('.hero-quote', {
+                duration: 1.8,
+                y: 0,
+                opacity: 1,
+                ease: 'power3.out',
+                delay: 1.2
+            });
+            
+            // Royal floating elements animation
+            gsap.utils.toArray('.royal-floating').forEach((el, i) => {
+                gsap.to(el, {
+                    duration: 20,
+                    rotation: 360,
+                    repeat: -1,
+                    ease: 'none'
+                });
+            });
+            
+            // Section header animations
+            gsap.utils.toArray('.section-header').forEach((header, i) => {
+                gsap.to(header, {
+                    scrollTrigger: {
+                        trigger: header,
+                        start: 'top 85%',
+                        toggleActions: 'play none none none'
+                    },
+                    duration: 1.2,
+                    y: 0,
+                    opacity: 1,
+                    ease: 'power3.out'
+                });
+            });
+            
+            // Divider animations
+            gsap.to('.royal-divider', {
+                scrollTrigger: {
+                    trigger: '.royal-divider',
+                    start: 'top 80%',
+                    toggleActions: 'play none none none'
+                },
+                duration: 1.8,
+                scaleX: 1,
+                ease: 'power3.out'
+            });
+            
+            // Timeline items animation
+            gsap.utils.toArray('.timeline-item').forEach((item, i) => {
+                gsap.to(item, {
+                    scrollTrigger: {
+                        trigger: item,
+                        start: 'top 90%',
+                        toggleActions: 'play none none none'
+                    },
+                    duration: 1.2,
+                    x: 0,
+                    opacity: 1,
+                    delay: i * 0.3,
+                    ease: 'power3.out'
+                });
+            });
+            
+            // Heritage timeline items animation
+            gsap.utils.toArray('.timeline-item-container').forEach((item, i) => {
+                gsap.to(item, {
+                    scrollTrigger: {
+                        trigger: item,
+                        start: 'top 90%',
+                        toggleActions: 'play none none none'
+                    },
+                    duration: 1.2,
+                    y: 0,
+                    opacity: 1,
+                    delay: i * 0.3,
+                    ease: 'power3.out'
+                });
+            });
+            
+            // Cultural cards animation
+            gsap.utils.toArray('.cultural-card').forEach((card, i) => {
+                gsap.to(card, {
+                    scrollTrigger: {
+                        trigger: card,
+                        start: 'top 90%',
+                        toggleActions: 'play none none none'
+                    },
+                    duration: 1.2,
+                    y: 0,
+                    opacity: 1,
+                    delay: i * 0.3,
+                    ease: 'power3.out'
+                });
+            });
+            
+            // Gallery items animation
+            gsap.utils.toArray('.gallery-item').forEach((item, i) => {
+                gsap.to(item, {
+                    scrollTrigger: {
+                        trigger: item,
+                        start: 'top 90%',
+                        toggleActions: 'play none none none'
+                    },
+                    duration: 1.2,
+                    scale: 1,
+                    opacity: 1,
+                    delay: i * 0.2,
+                    ease: 'power3.out'
+                });
+            });
+            
+            // Message card animation
+            gsap.to('#messageCard', {
+                scrollTrigger: {
+                    trigger: '#messageCard',
+                    start: 'top 80%',
+                    toggleActions: 'play none none none'
+                },
+                duration: 1.5,
+                y: 0,
+                scale: 1,
+                opacity: 1,
+                ease: 'power3.out'
+            });
+            
+            // Message content animations
+            gsap.to('.message-header', {
+                scrollTrigger: {
+                    trigger: '.message-header',
+                    start: 'top 90%',
+                    toggleActions: 'play none none none'
+                },
+                duration: 1,
+                y: 0,
+                opacity: 1,
+                ease: 'power3.out'
+            });
+            
+            gsap.utils.toArray('.message-content p').forEach((p, i) => {
+                gsap.to(p, {
+                    scrollTrigger: {
+                        trigger: p,
+                        start: 'top 90%',
+                        toggleActions: 'play none none none'
+                    },
+                    duration: 1,
+                    y: 0,
+                    opacity: 1,
+                    delay: i * 0.2,
+                    ease: 'power3.out'
+                });
+            });
+            
+            gsap.to('.signature', {
+                scrollTrigger: {
+                    trigger: '.signature',
+                    start: 'top 90%',
+                    toggleActions: 'play none none none'
+                },
+                duration: 1,
+                y: 0,
+                opacity: 1,
+                ease: 'power3.out'
+            });
+            
+            // Museum items animation
+            gsap.utils.toArray('.museum-item').forEach((item, i) => {
+                gsap.to(item, {
+                    scrollTrigger: {
+                        trigger: item,
+                        start: 'top 90%',
+                        toggleActions: 'play none none none'
+                    },
+                    duration: 1.2,
+                    y: 0,
+                    opacity: 1,
+                    delay: i * 0.2,
+                    ease: 'power3.out'
+                });
+            });
+            
+            // Legacy section animations
+            gsap.to('.legacy-title', {
+                scrollTrigger: {
+                    trigger: '.legacy-title',
+                    start: 'top 90%',
+                    toggleActions: 'play none none none'
+                },
+                duration: 1.2,
+                y: 0,
+                opacity: 1,
+                ease: 'power3.out'
+            });
+            
+            gsap.utils.toArray('.legacy-statement').forEach((p, i) => {
+                gsap.to(p, {
+                    scrollTrigger: {
+                        trigger: p,
+                        start: 'top 90%',
+                        toggleActions: 'play none none none'
+                    },
+                    duration: 1.2,
+                    y: 0,
+                    opacity: 1,
+                    delay: i * 0.4,
+                    ease: 'power3.out'
+                });
+            });
+            
+            gsap.to('.quran-verse-large', {
+                scrollTrigger: {
+                    trigger: '.quran-verse-large',
+                    start: 'top 90%',
+                    toggleActions: 'play none none none'
+                },
+                duration: 1.5,
+                scale: 1,
+                opacity: 1,
+                ease: 'power3.out'
+            });
+            
+            // Footer animations
+            gsap.to('.footer-logo', {
+                scrollTrigger: {
+                    trigger: '.footer-logo',
+                    start: 'top 90%',
+                    toggleActions: 'play none none none'
+                },
+                duration: 1.2,
+                y: 0,
+                opacity: 1,
+                ease: 'power3.out'
+            });
+            
+            gsap.to('.footer-quote', {
+                scrollTrigger: {
+                    trigger: '.footer-quote',
+                    start: 'top 90%',
+                    toggleActions: 'play none none none'
+                },
+                duration: 1.2,
+                y: 0,
+                opacity: 1,
+                ease: 'power3.out'
+            });
+            
+            gsap.utils.toArray('.social-icon').forEach((icon, i) => {
+                gsap.to(icon, {
+                    scrollTrigger: {
+                        trigger: icon,
+                        start: 'top 90%',
+                        toggleActions: 'play none none none'
+                    },
+                    duration: 1,
+                    scale: 1,
+                    delay: i * 0.2,
+                    ease: 'back.out(1.7)'
+                });
+            });
+            
+            gsap.to('.copyright', {
+                scrollTrigger: {
+                    trigger: '.copyright',
+                    start: 'top 90%',
+                    toggleActions: 'play none none none'
+                },
+                duration: 1.2,
+                y: 0,
+                opacity: 1,
+                ease: 'power3.out'
+            });
+            
+            // Background animation for hero section
+            gsap.to('.royal-hero', {
+                duration: 40,
+                backgroundPosition: '50% 100%',
+                repeat: -1,
+                yoyo: true,
+                ease: 'none'
+            });
+            
+            // Mobile navigation active state
+            const sections = document.querySelectorAll('section');
+            const mobileNavItems = document.querySelectorAll('.mobile-nav-item');
+            
+            function setActiveNav() {
+                let index = sections.length;
+                
+                while(--index && window.scrollY + 100 < sections[index].offsetTop) {}
+                
+                mobileNavItems.forEach((item) => item.classList.remove('active'));
+                if (mobileNavItems[index]) {
+                    mobileNavItems[index].classList.add('active');
+                }
+            }
+            
+            setActiveNav();
+            window.addEventListener('scroll', setActiveNav);
+        });
+        
+        // Smooth scrolling for navigation
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+        
+        // Scroll down button functionality
+        document.querySelector('.scroll-indicator').addEventListener('click', function() {
+            window.scrollTo({
+                top: window.innerHeight,
+                behavior: 'smooth'
+            });
+        });
+    </script>
+</body>
+</html>
